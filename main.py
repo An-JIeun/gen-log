@@ -20,9 +20,14 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=api_key)
+
+#json 파일 명으로 수정
 json_file_path = "dulcet-clock-286410-6def8608745b.json"
-gc = gspread.service_account(json_file_path)
+
+# url 수정
 spreadsheet_url = "https://docs.google.com/spreadsheets/d/1-sI_bCsNsW-cO7jRjMml02Mj_lETQ7-QZa67Q1R5DjM/edit?gid=0#gid=0"
+
+gc = gspread.service_account(json_file_path)
 doc = gc.open_by_url(spreadsheet_url)
 df = pd.DataFrame(doc.sheet1.get_all_records())
 
