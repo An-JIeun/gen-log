@@ -8,7 +8,8 @@
 ## 실행 전 준비 사항
 ### 1. 구글 스프레드 시트 API 발급
 - 참고 : [파이썬을 이용한 구글 스프레드시트 연동 및 자동화 방법](https://develop-davi-kr.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C%EC%8B%9C%ED%8A%B8-%EC%97%B0%EB%8F%99-%EB%B0%8F-%EC%9E%90%EB%8F%99%ED%99%94-%EB%B0%A9%EB%B2%95)
-- 사용할 google spreadsheet 생성
+- 위 링크를 참고하여 구글 스프레드 시트 인증 json 파일을 다운받습니다.
+- 사용할 google spreadsheet 생성하고, 스프레드 시트가 공개되어 있지 않은 경우 json 파일에 있는 "client_email"을 사용자로 추가합니다.
 
 ### 2. OPEN AI Key 발급
 - 참고 : [파이썬 OpenAI API key 숨기기: env파일, 환경변수 설정](https://simpleuse.tistory.com/entry/howtousekey)
